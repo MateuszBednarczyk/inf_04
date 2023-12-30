@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">zadanie</string>
+    <string name="wlasciwosciCzcionkiTextViewValue">Wlasciwosci czcionki</string>
+    <string name="rozmiarTextViewValue">Rozmiar:</string>
+    <string name="buttonVal">">>"</string>
+    <string name="defaultCytatTextViewValue">Dzien dobry</string>
+</resources>
