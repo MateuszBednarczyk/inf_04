@@ -1,0 +1,25 @@
+<h2>Liczba kursów: {{arr.length}}</h2>
+<ol>
+  <li *ngFor="let k of arr">
+    {{k}}
+  </li>
+</ol>
+
+<form [formGroup]="formularz">
+  <div class = "form-group">
+    <label for="imienazwisko">Imię i nazwisko</label>
+    <input type="text" id="imienazwisko" formControlName="imieinazwisko"
+    class="form-control">
+  </div>
+  <br>
+  <div class = "form-group">
+    <label for="nrkursu">Numer kursu</label>
+    <input type="number" id="nrkursu" formControlName="nrkursu"
+    class="form-control">
+  </div>
+  <br>
+  <div class = "form-group">
+    <button type="button" id="guzik" (click)="zapisz()" 
+    class="btn btn-primary">Zapisz do kursu</button>
+  </div>
+</form>

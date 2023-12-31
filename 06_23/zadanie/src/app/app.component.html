@@ -1,0 +1,32 @@
+<form [formGroup]="form">
+
+	<div class="form-group">
+		<label for="tytul">Tytul</label>
+		<input type="text"
+			id="tytul"
+			formControlName="tytul"
+			class="form-control">
+	</div>
+
+	<br>
+
+	<div class="form-select">
+		<label for="rodzaj">Rodzaj</label>
+		<select id="rodzaj"
+			formControlName="rodzaj"
+			class="form-control">
+			<option></option>
+			<option value="1">Komedia</option>
+			<option value="2">Obyczajowy</option>
+			<option value="3">Sensacyjny</option>
+			<option value="4">Horror</option>
+		</select>
+	</div>
+
+	<br>
+
+	<button (click)="dodaj()"
+		class="btn btn-primary">
+		Dodaj
+	</button>
+</form>
